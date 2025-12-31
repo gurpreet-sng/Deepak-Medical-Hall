@@ -1,0 +1,170 @@
+<div class="container-fluid py-0 sec-menu-bgg">
+  <div class="sec-space-left-right-nav">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <div class="container-fluid secwhitpad align-items-center">
+        <div class="sectoribg">
+          <p>
+            <a href="tel:9026640400">
+              <i class="bi bi-telephone"></i>
+              90266 40400
+            </a>
+          </p>
+
+          <p>
+            <a href="#">
+              <i class="bi bi-geo-alt"></i>
+              Find a Store
+            </a>
+          </p>
+        </div>
+
+
+
+        <!-- NAV TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end sec-togle-bg" id="navbarOffcanvas">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+              <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item"><a class="nav-link px-3 headermenusec" href="#">About</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-3 headermenusec dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    role="button" aria-expanded="false">
+                    Shop
+                  </a>
+
+                  <ul class="dropdown-menu shop-dropdown">
+                    <li><a class="dropdown-item" href="#">Medicines</a></li>
+                    <li><a class="dropdown-item" href="#">Pet Care</a></li>
+                    <li><a class="dropdown-item" href="#">Supplements</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  </ul>
+                </li>
+
+                <a href="index.html" class="navbar-brand logosec">
+                  <img class="img-fluid" src="images/main-logo.png" alt="">
+                </a>
+                <li class="nav-item"><a class="nav-link px-3 headermenusec" href="#">Blog </a></li>
+                <li class="nav-item"><a class="nav-link px-3 headermenusec" href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Desktop Icons -->
+            <div class="seccaetbg d-none d-xl-flex">
+
+              <!-- User -->
+              <div class="icon-btn">
+                <i class="bi bi-person"></i>
+              </div>
+
+              <!-- Search -->
+              <div class="icon-btn">
+                <i class="bi bi-search"></i>
+              </div>
+
+              <!-- Cart -->
+              <div class="icon-btn cart-icon">
+                <i class="bi bi-bag"></i>
+                <span class="badge">1</span>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- MOBILE BOTTOM BAR -->
+    <div class="mobile-bottom-bar d-xl-none">
+      <div class="mob-item" id="openSearchMobile">
+        <i class="bi bi-search"></i>
+        <span>Search</span>
+      </div>
+
+      <div class="mob-item">
+        <a href="#">
+          <i class="bi bi-person"></i>
+          <span>Account</span>
+        </a>
+      </div>
+
+      <div class="mob-item">
+        <a href="#">
+          <i class="bi bi-bag"></i>
+          <span>Cart</span>
+          <b class="mob-badge">0</b>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- 📌 MOBILE SEARCH OVERLAY -->
+<!-- <div id="searchOverlay" class="search-overlay">
+  <div class="search-box">
+    <input type="text" placeholder="Search products..." id="mobileSearchInput">
+    <button id="closeSearch" class="close-btn">&times;</button>
+  </div>
+</div> -->
+
+
+<!-- wharshapp -->
+<!-- <div class="floating_btn">
+  <a target="_blank" href="https://wa.me/+91 1234567890">
+    <div class="contact_icon">
+      <i class="fa-brands fa-whatsapp "></i>
+    </div>
+  </a>
+  <p class="text_icon">Talk to us?</p>
+</div> -->
+
+
+<!-- Back to top button -->
+<!-- <a id="button"></a> -->
+<!-- Back to top -->
+
+
+<script>
+  var btn = $('#button');
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+
+
+  /* ------------------------------------
+     MOBILE SEARCH OVERLAY JS
+  ------------------------------------- */
+
+  // Open search
+  document.getElementById("openSearchMobile").addEventListener("click", function () {
+    document.getElementById("searchOverlay").classList.add("show");
+  });
+
+  // Close search
+  document.getElementById("closeSearch").addEventListener("click", function () {
+    document.getElementById("searchOverlay").classList.remove("show");
+  });
+
+</script>
