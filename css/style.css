@@ -492,6 +492,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
   transition: .3s;
   border: 1.5px solid transparent;
+  margin-bottom: 20px;
 }
 
 .secprodboxbg {
@@ -958,6 +959,9 @@
 .copy-right-section{
   padding: 30px 40px;
 }
+.mobile-logo{
+    display: none;
+}
 @media only screen and (min-width:1920px){}
 @media only screen and (max-width:1440px){
 
@@ -965,10 +969,243 @@
     font-size: 15px;
   }
 }
-@media only screen and (max-width:1199px){}
-@media only screen and (max-width:1024px){}
-@media only screen and (max-width:991px){}
-@media only screen and (max-width:767px){}
+@media only screen and (max-width:1199px){
+
+  .sec-space-left-right-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .navbar.navbar-expand-xl.navbar-dark .sectoribg{
+    margin-right: 20px;
+  }
+  .logosec img{
+    height: auto;
+  }
+  .navbar-toggler{
+    background: #b88a00;
+  }
+  .mobile-logo{
+    display: block;
+  }
+  .mobile-bottom-bar.d-xl-none{
+    display: flex;
+    background-color: #b88a00;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .mobile-bottom-bar .mob-item, .mobile-bottom-bar .mob-item a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .mobile-bottom-bar .mob-item{
+      margin: 0px 10px;
+  }
+  .cart-step.mr-right:before{
+    display: none;
+  }
+  .cart-step.mr-right{
+    padding-right: 0px;
+  }
+  .add-to-cart h4 span{
+    padding: 5px;
+  }
+  .new-price{
+    font-size: 18px;
+  }
+  .new-price{
+    font-size: 15px;
+  }
+  .best-card h6{
+    font-size: 14px;
+  }
+  .secwildbg{
+    padding: 200px 40px 180px 40px;
+  }
+  .best-selling-section{
+    padding-top: 0px;
+  }
+  .ft-title h4 a{
+    font-size: 18px;
+  }
+  .email-field .btn{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:1024px){
+
+      button.navbar-toggler{
+        background-color: #b88a00 !important;
+    }
+    .pet-hero{
+      padding: 220px 80px 150px 100px;
+    }
+    .hero-content h1{
+      text-align: left;
+    }
+    .hero-content p{
+      text-align: left;
+    }
+    .hero-content{
+      text-align: left;
+    }
+    .offcanvas-header {
+        background: #b88a00 !important;
+    }
+}
+@media only screen and (max-width:991px){
+
+  .sec-menu-bgg{
+    width: 90%;
+  }
+  .sec-menu-bgg{
+    padding: 14px 20px;
+  }
+  .sec-space-left-right-nav{
+    padding-top: 10px !important;
+  }
+  .pet-hero {
+      padding: 220px 40px 150px 40px;
+  }
+  .secsleimg.mb-3{
+    width: 250px;
+  }
+  .countdown{
+    margin-bottom: 30px;
+  }
+  .secslebg{
+    padding: 100px 40px;
+    margin-bottom: 0px;
+  }
+  .secwildbg{
+      padding: 100px 20px;
+  }
+  .wild-content h2{
+    font-size: 40px;
+  }
+  .brands-we-think .natural-pet-brands {
+    padding: 40px 20px 40px;
+  }
+  .sestprdbg {
+    padding: 60px 20px;
+  }
+  .steps-row .col-md-6.col-lg-4{
+    margin-bottom: 40px;
+  }
+  .subscribe-to-our-newsletter {
+    padding: 0px 20px;
+  }
+  .footer-bottom .container-fluid{
+    padding: 40px 20px;
+  }
+  .subscribe-text h4{
+    font-size: 30px;
+  }
+  .email-field .btn i{
+    display: none;
+  }
+  .footer-bottom .col-md-6.col-lg-4{
+    margin-bottom: 40px;
+  }
+  .hero-content h1{
+    font-size: 60px;
+  }
+  .browse-sec {
+    padding: 60px 20px;
+  }
+  .browse-sec2 {
+    padding: 20px 20px 60px 20px;
+  }
+}
+@media only screen and (max-width:767px){
+  .sectoribg{
+    display: none;
+  }
+  .browse-sec2 a {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+  }
+  .everyday-low-section a{
+    display: inline-block;
+  }
+  .everyday-low-section .col-md-3{
+    text-align: center;
+  }
+  .sestprdbg.collection-kittens-sec{
+    padding-bottom: 0px;
+  }
+  .sestprdbg.everyday-low-section{
+    padding-top: 0px;
+  }
+  .sestprdbg.best-selling-section{
+    padding-top: 0px;
+  }
+  .brands-we-think .natural-pet-brands {
+        padding: 40px 20px 0px;
+    }
+    .footer-bottom .col-lg-2.col-md-4.col-6{
+      margin-bottom: 40px;
+    }
+    .ft-title h4 a {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media only screen and (max-width:575px){
+
+    .brands-we-think .natural-pet-brands {
+        padding: 40px 0px 0px;
+    }
+    brands-we-think .natural-pet-brands {
+        padding: 0px 0px 0px !important;
+    }
+    .sestprdbg {
+        padding: 40px 20px;
+    }
+    .browse-title{
+      font-size: 24px;
+    }
+    .wild-content h2 {
+        font-size: 30px;
+    }
+  .cart-btn {
+    position: static;
+    margin-top: 10px;
+  }
+  .best-card{
+    height: auto;
+  }
+  .copy-right-section{
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .copy-right-section p{
+    text-align: center;
+  }
+  .copy-right-section .col-md-4{
+    margin: 10px 0px;
+  }
+  .footer-bottom .container-fluid{
+      padding: 40px 20px 0px;
+  }
+  .mobile-logo{
+    width: 180px;
+  }
+  .hero-content h1 {
+        font-size: 40px;
+    }
+  .pet-hero {
+        padding: 199px 40px 100px 40px;
+        height: auto;
+        min-height: auto;
+    }
+}
+/*
 @media(max-width:768px){
   .secwildbg{
     padding:80px 20px;
@@ -981,6 +1218,7 @@
     font-size:28px;
   }
 }
+
 @media(max-width:768px){
   .pet-hero {
     padding: 40px 20px;
@@ -988,3 +1226,4 @@
   }
 }
 @media only screen and (max-width:575px){}
+*/
