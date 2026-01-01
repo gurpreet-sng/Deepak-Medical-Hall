@@ -1210,6 +1210,13 @@
   .brands-logos ul li{
     width: 50%;
   }
+  .add-to-cart h4 span{
+    margin-bottom: 5px;
+  }
+      .add-to-cart h4 span {
+        margin-bottom: 5px;
+        display: inline-block;
+    }
 }
 /*
 @media(max-width:768px){
